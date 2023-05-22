@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: lightcoral;
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.nav-header {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: 300px;
+  grid-template-areas:
+    'a'
+    'a';
+}
+.container {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+.btn {
+  display: flex;
+  justify-items: center;
+  cursor: pointer;
+  transition: all 0.3s linear black;
+  border: 2px solid black;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 10px black;
+  background: transparent;
+}
+.btn:hover {
+  color: white;
+  background: black;
+}
+a:hover {
+  color: red;
+}
+.color {
+  padding: 1rem;
+}
